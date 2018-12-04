@@ -13,6 +13,9 @@ public class Ship {
     int length;
     Coordinate headCoordinate;
     Coordinate tailCoordinate;
+    Coordinate [] body;
+    String color;
+    String orientation;
     int hitCount = 0;
     
     
@@ -24,6 +27,10 @@ public class Ship {
         this.length = length;
     }
     
+    public void setOrientation(String word) {
+        this.orientation = word;
+    }
+    
 //    public void setOrientation(String orientation){
 //        this.orientation = orientation;
 //    }
@@ -32,7 +39,7 @@ public class Ship {
         headCoordinate.xAxis = coordinate.xAxis;
     }
     
-    public void setHeadCoordinateRow(Coordinate coordinate){
+    public void setHeadCoordinateRow(Coordinate coordinate ){
         headCoordinate.xAxis = coordinate.xAxis;
     }
     
@@ -44,4 +51,7 @@ public class Ship {
         headCoordinate.xAxis = coordinate.xAxis;
     }
     
+    public void fillBodyOfShip(Ship ship){
+        
+    }
 }
